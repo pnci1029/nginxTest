@@ -1,8 +1,8 @@
 # switch.sh
 
+#!/bin/bash
 
 # Crawl current connected port of WAS
-# shellcheck disable=SC2002
 CURRENT_PORT=$(cat /home/ec2-user/service_url.inc  | grep -Po '[0-9]+' | tail -1)
 TARGET_PORT=0
 
